@@ -1,7 +1,7 @@
-import { Inter } from "next/font/google";
+import { Recursive } from 'next/font/google'
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const recursive = Recursive({ subsets: ['latin'] })
 
 export const metadata = {
   title: "Create Next App",
@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={recursive.className}>{children}</body> {/* Use the correct variable */}
     </html>
   );
 }
